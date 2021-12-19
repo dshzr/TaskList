@@ -89,6 +89,14 @@ li:hover button.lixeira{
 }
 
 
+@media (max-width: 500px){
+  .taskList button.lixeira{
+    
+    right: 0px;
+  } 
+}
+
+
 .inputs{
   width: 100%;
   max-width: 350px;
