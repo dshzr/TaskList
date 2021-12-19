@@ -1,0 +1,144 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  font-family: 'Roboto', Nunito, sans-serif;
+  height:100vh;
+  width:100%;
+}
+
+
+.container{
+  width: 100%;
+  
+  height: 100%;
+  display: flex;
+ justify-content: center;
+  background-color: #8257E5;
+  margin: 0 auto;
+  flex-direction: row;
+
+}
+
+.titulo{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lista{
+  max-height: 300px;
+  max-width: 400px;
+}
+
+.taskList label{
+  cursor: pointer;
+}
+
+.taskList ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  
+}
+
+.taskList li{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  gap: 15px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  width: 350px;
+  padding: 12px 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin: 6px auto;
+  cursor: pointer;
+
+}
+
+
+.taskList button.lixeira{
+  color: white;
+  background:tomato;
+  font-size: 12pt;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 3px;
+  position: absolute;
+  right: -45px;
+  transition: all 0.5s ease;
+  height: 100%;
+  border: none;
+  top: 0;
+  cursor: pointer;
+} 
+
+li:hover button.lixeira{
+  right:0;
+}
+
+
+.inputs{
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.inputs input::placeholder{
+  font-size: 12pt;
+  padding: 0 5px;
+}
+
+.inputs input{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14pt;
+  color: rgba(0, 0, 0, .75);
+}
+
+
+
+.inputs button{
+  border: none;
+  width: 100px;
+  height: calc(100% - 4px);
+  align-self: center;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #8257E5;
+  box-shadow: 0 5px 0 0 rgba(250, 250, 250, .8);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.lista::-webkit-scrollbar {
+  width: 12px;          
+  background-color: #8257E5;
+  border-radius: 5px;
+}
+.lista::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
